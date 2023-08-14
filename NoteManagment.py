@@ -31,8 +31,6 @@ def data_filter(note_list: list):
     return result.to_dict('records')
 
 def change_note(note_list: list):
-    # val = find_note(note_list)
-    # View.screen(val)
     id = input("Введите id заметки: ")
     for notes in note_list:
         if id == notes["id"]:
@@ -44,8 +42,6 @@ def change_note(note_list: list):
     fm.save_file(note_list)
 
 def delete_note(note_list: list):
-    # val = find_note(note_list)
-    # View.screen(val)
     id = input("Введите id заметки: ")
     for notes in note_list:
         if id == notes["id"]:
